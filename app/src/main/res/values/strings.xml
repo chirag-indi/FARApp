@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Jiarun Real Estate</string>
+    <string name="action_create_order">Create Order</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="action_share">Share</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_top">Welcome to Jiarun Real Estate!</string>
+    <string name="title_activity_pizza_detail">title_activity_pizza_detail</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="titles">
+        <item>Home</item>
+        <item>Homes For Sale</item>
+        <item>Homes For Rent</item>
+        <item>Our agents</item>
+        <item>Saved Homes</item>
+        <item>Recently viewed</item>
+        <item>Compare Homes</item>
+        <item>Our store</item>
+    </string-array>
+
+
+    <string-array name="pizzas">
+        <item>Diavolo</item>
+        <item>Funghi</item>
+    </string-array>
+
+    <string-array name="pasta">
+        <item>Spaghetti Bologness</item>
+        <item>Lasagne</item>
+    </string-array>
+
+    <string-array name="stores">
+        <item>Cambridge</item>
+        <item>Sebastopol</item>
+    </string-array>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

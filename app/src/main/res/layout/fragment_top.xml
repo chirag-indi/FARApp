@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fadingEdge="vertical"
+    android:id="@+id/fragment_top"
+    >
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/image_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/topp3" />
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="homes for rent"
+            android:layout_below="@+id/image_top" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="homes for sale"
+            android:layout_below="@+id/image_top"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1"
+            android:text="contact us"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/button1"
+            android:text="my saved homes"/>
+
+
+    </RelativeLayout>
+</ScrollView>

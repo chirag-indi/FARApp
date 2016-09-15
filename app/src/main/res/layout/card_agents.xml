@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_agents"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:layout_margin="5dp"
+
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <ImageView
+            android:id="@+id/image_agents"
+            android:layout_width="180dp"
+            android:layout_height="240dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/image_agents"
+            android:layout_toEndOf="@+id/image_agents">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/name_agents"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/intro_agents"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Tel:6085568253"
+                android:id="@+id/phone_agents"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

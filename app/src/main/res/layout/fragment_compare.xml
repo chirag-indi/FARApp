@@ -1,0 +1,452 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_top"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!--android:shrinkColumns="1,2,3">-->
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/delete_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="6dip"
+                android:layout_gravity="top|left"
+                android:src="@drawable/delete48" />
+
+            <ImageView
+                android:id="@+id/com1_pic"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/rent1" />
+
+            <ImageView
+                android:id="@+id/com2_pic"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_column="3"
+                android:padding="3dip"
+                android:scaleType="centerInside"
+
+                android:src="@drawable/rent2" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="Street" />
+
+            <TextView
+                android:id="@+id/com1_street"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_street"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="City" />
+
+            <TextView
+                android:id="@+id/com1_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="home type" />
+
+            <TextView
+                android:id="@+id/com1_home_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_home_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="# beds" />
+
+            <TextView
+                android:id="@+id/com1_beds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_beds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="# bath" />
+
+            <TextView
+                android:id="@+id/com1_bath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_bath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="# sqft" />
+
+            <TextView
+                android:id="@+id/com1_sqft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_sqft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="stories" />
+
+            <TextView
+                android:id="@+id/com1_stories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_stories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="price" />
+
+            <TextView
+                android:id="@+id/com1_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="price/sqft" />
+
+            <TextView
+                android:id="@+id/com1_price_sqft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_price_sqft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="year built" />
+
+            <TextView
+                android:id="@+id/com1_year_built"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_year_built"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="lot size" />
+
+            <TextView
+                android:id="@+id/com1_lot_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_lot_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="Architectural style" />
+
+            <TextView
+                android:id="@+id/com1_architectural_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_architectural_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="Construction material" />
+
+            <TextView
+                android:id="@+id/com1_construction_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_construction_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="Transaction type" />
+
+            <TextView
+                android:id="@+id/com1_transaction_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+
+            <TextView
+                android:id="@+id/com2_transaction_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:padding="3dip"
+                android:text="to be assigned" />
+        </TableRow>
+
+
+    </TableLayout>
+
+</HorizontalScrollView>
