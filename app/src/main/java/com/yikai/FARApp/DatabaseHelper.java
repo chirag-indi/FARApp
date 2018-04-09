@@ -1,4 +1,4 @@
-package com.yikai.bitsandpizzas;
+package com.yikai.FARApp;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,12 +8,12 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Created by Yikai on 2016/5/24.
  */
-public class JiarunDatabaseHelper extends SQLiteOpenHelper{
+public class DatabaseHelper extends SQLiteOpenHelper{
 
-    private static final String DB_NAME = "Jiarun";
+    private static final String DB_NAME = "FARApp";
     private static final int DB_VERSION = 2;              // the version of the database
 
-    JiarunDatabaseHelper(Context context){
+    DatabaseHelper(Context context){
     super(context, DB_NAME, null, DB_VERSION);
 
     }
@@ -38,10 +38,10 @@ public class JiarunDatabaseHelper extends SQLiteOpenHelper{
             insertRent(db, "921 Meadow View Dr", "Richardson, TX 75080", 3, 2, 1672, 2200, 0, 0, R.drawable.rent1, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");    // RORS: 0:rent 1:sale
             insertRent(db, "800 West Renner Rd", "Richardson, TX 75080", 3, 2, 1432, 1500, 1, 0, R.drawable.rent2, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");
             insertRent(db, "5001 Sheboygan Ave, APT 114", "Madison, WI 57305", 2, 2, 1231, 1300, 0, 1, R.drawable.rent3, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");
-            insertRent(db, "5001 Sheboygan Ave, APT 114", "Madison, WI 57305", 2, 2, 1231, 1300, 0, 1, R.drawable.rent4, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");
+            insertRent(db, "4 Goldfield Rd.Honolulu, HI 96815", "Madison, WI 57305", 2, 2, 1231, 1300, 0, 1, R.drawable.rent4, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");
             insertRent(db, "5001 Sheboygan Ave, APT 114", "Madison, WI 57305", 2, 2, 1231, 1300, 0, 1, R.drawable.rent5, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");
-            insertRent(db, "5001 Sheboygan Ave, APT 114", "Madison, WI 57305", 2, 2, 1231, 1300, 0, 1, R.drawable.rent6, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");
-            insertRent(db, "5001 Sheboygan Ave, APT 114", "Madison, WI 57305", 2, 2, 1231, 1300, 0, 1, R.drawable.rent7, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");
+            insertRent(db, "123 6th St.Melbourne, FL 32904", "Madison, WI 57305", 2, 2, 1231, 1300, 0, 1, R.drawable.rent6, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");
+            insertRent(db, "71 Pilgrim Avenue,Chevy Chase, MD 20815", "Madison, WI 57305", 2, 2, 1231, 1300, 0, 1, R.drawable.rent7, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");
             insertRent(db, "5001 Sheboygan Ave, APT 114", "Madison, WI 57305", 2, 2, 1231, 1300, 0, 1, R.drawable.rent8, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");
             insertRent(db, "5001 Sheboygan Ave, APT 114", "Madison, WI 57305", 2, 2, 1231, 1300, 0, 1, R.drawable.rent9, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");
             insertRent(db, "5001 Sheboygan Ave, APT 114", "Madison, WI 57305", 2, 2, 1231, 1300, 0, 1, R.drawable.rent10, 0, "Apartment", 2, 1998, 4500, "Modern", "Brick");

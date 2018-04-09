@@ -1,4 +1,4 @@
-package com.yikai.bitsandpizzas;
+package com.yikai.FARApp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

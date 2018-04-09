@@ -1,4 +1,4 @@
-package com.yikai.bitsandpizzas;
+package com.yikai.FARApp;
 
 /**
  * Created by Yikai on 2016/5/17.
@@ -119,7 +119,7 @@ public class rentAdapter extends RecyclerView.Adapter<rentAdapter.ViewHolder> {
         sqft1.setText(bed[position]+" beds·"+bath[position]+" baths·"+sqft[position]+" sqft");
 
         TextView price1 = (TextView) cardView.findViewById(R.id.price_rent);
-        price1.setText("$"+price[position]+"/month");
+        price1.setText("Rs."+price[position]+"/month");
 
 
         TextView rent_or_sale = (TextView) cardView.findViewById(R.id.FOR_RENT_OR_SALE);

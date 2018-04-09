@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/button1"
-            android:text="contact us"/>
+            android:text="Personal Listings"/>
 
         <Button
             android:id="@+id/button4"

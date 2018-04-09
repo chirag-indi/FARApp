@@ -1,4 +1,4 @@
-package com.yikai.bitsandpizzas;
+package com.yikai.FARApp;
 
 
 import android.app.Fragment;
@@ -18,9 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class CompareFragment extends Fragment {
 
     private int number_comp_rent = 0;
@@ -41,8 +39,8 @@ public class CompareFragment extends Fragment {
         try {
 
 
-            SQLiteOpenHelper JiarunDatabaseHelper = new JiarunDatabaseHelper(getActivity());
-            final SQLiteDatabase db = JiarunDatabaseHelper.getReadableDatabase();
+            SQLiteOpenHelper DatabaseHelper = new DatabaseHelper(getActivity());
+            final SQLiteDatabase db = DatabaseHelper.getReadableDatabase();
 
             Cursor count_comp_n = db.query("RENT",
                     new String[]{"COMP", "COUNT(_id) AS count"},

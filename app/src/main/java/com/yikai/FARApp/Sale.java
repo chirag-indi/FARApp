@@ -1,4 +1,4 @@
-package com.yikai.bitsandpizzas;
+package com.yikai.FARApp;
 
 /**
  * Created by Yikai on 2016/5/13.

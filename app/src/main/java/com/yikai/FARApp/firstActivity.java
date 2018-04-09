@@ -1,4 +1,4 @@
-package com.yikai.bitsandpizzas;
+package com.yikai.FARApp;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ public class firstActivity extends Activity {
     long t = 2000;
 
     protected void forintent(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
 
     }

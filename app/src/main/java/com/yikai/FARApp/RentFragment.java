@@ -1,4 +1,4 @@
-package com.yikai.bitsandpizzas;
+package com.yikai.FARApp;
 
 
 import android.app.Fragment;
@@ -20,12 +20,12 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 
-public class SaleMaterialFragment extends Fragment {
+public class RentFragment extends Fragment {
 
     private SQLiteDatabase db;
-    private Cursor count_sale_n;
+    private Cursor count_rent_n;
     private Cursor cursor;
-    private SQLiteOpenHelper JiarunDatabaseHelper;
+    private SQLiteOpenHelper DatabaseHelper;
 
     String[] address_1;
     String[] address_2;
@@ -44,32 +44,32 @@ public class SaleMaterialFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        RecyclerView SaleRecycler = (RecyclerView) inflater.inflate(R.layout.fragment_sale_material, container, false);
+        RecyclerView RentRecycler = (RecyclerView) inflater.inflate(R.layout.fragment_rent_material, container, false);
 
         try {
-            int number_sale;
+            int number_rent;
 
-            JiarunDatabaseHelper = new JiarunDatabaseHelper(getActivity());
-            db = JiarunDatabaseHelper.getReadableDatabase();
+            DatabaseHelper = new DatabaseHelper(getActivity());
+            db = DatabaseHelper.getReadableDatabase();
 
-            Cursor count_sale_n = db.query("SALE",
+            Cursor count_rent_n = db.query("RENT",
                     new String[]{"COUNT(_id) AS count_rent"},
                     null, null, null, null, null);
-            count_sale_n.moveToFirst();
-            number_sale = count_sale_n.getInt(0);
+            count_rent_n.moveToFirst();
+                number_rent = count_rent_n.getInt(0);
 
-            address_1 = new String[number_sale];
-            address_2 = new String[number_sale];
-            bed_1 = new int[number_sale];
-            bath_1 = new int[number_sale];
-            sqft_1 = new int[number_sale];
-            price_1 = new int[number_sale];
-            save_1 = new int[number_sale];
-            comp_1 = new int[number_sale];
-            pict_1 = new int[number_sale];
-            rors_1 = new int[number_sale];
+            address_1 = new String[number_rent];
+            address_2 = new String[number_rent];
+            bed_1 = new int[number_rent];
+            bath_1 = new int[number_rent];
+            sqft_1 = new int[number_rent];
+            price_1 = new int[number_rent];
+            save_1 = new int[number_rent];
+            comp_1 = new int[number_rent];
+            pict_1 = new int[number_rent];
+            rors_1 = new int[number_rent];
 
-            Cursor cursor = db.query("SALE",
+            Cursor cursor = db.query("RENT",
                     new String[]{"ADD1", "ADD2", "BED", "BATH", "SQFT", "PRICE", "SAVE", "COMP", "PICID", "RORS"},
                     null,
                     null,
@@ -94,15 +94,15 @@ public class SaleMaterialFragment extends Fragment {
                 }while(cursor.moveToNext());
             }
 
-            rentAdapter adapter3 = new rentAdapter(address_1,address_2, bed_1, bath_1, sqft_1, price_1, save_1, comp_1, pict_1, rors_1);
-            SaleRecycler.setAdapter(adapter3);
+            rentAdapter adapter1 = new rentAdapter(address_1,address_2, bed_1, bath_1, sqft_1, price_1, save_1, comp_1, pict_1, rors_1);
+            RentRecycler.setAdapter(adapter1);
             LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
-            SaleRecycler.setLayoutManager(layoutManager);
+            RentRecycler.setLayoutManager(layoutManager);
 
-            adapter3.setListener(new rentAdapter.Listener3() {
+            adapter1.setListener(new rentAdapter.Listener3() {
                 int newSave;
                 public void onClick(int position, int save_pict, CardView cardView) {
-                    if(save_1[position] ==1) {
+                 if(save_1[position] ==1) {
                         save_1[position] = 0;
                         newSave = R.drawable.like1;
                     }else{
@@ -116,7 +116,7 @@ public class SaleMaterialFragment extends Fragment {
 
                     ContentValues changeSAVE = new ContentValues();
                     changeSAVE.put("SAVE",save_1[position]);
-                    db.update("SALE",
+                    db.update("RENT",
                             changeSAVE,
                             "_id = ?",
                             new String[] {Integer.toString(position+1)});
@@ -124,7 +124,8 @@ public class SaleMaterialFragment extends Fragment {
 
             });
 
-            adapter3.setListener(new rentAdapter.Listener4() {
+
+            adapter1.setListener(new rentAdapter.Listener4() {
                 int newComp;
                 public void onClick(int position, int save_pict, CardView cardView) {
                     if(comp_1[position] ==1) {
@@ -141,13 +142,14 @@ public class SaleMaterialFragment extends Fragment {
 
                     ContentValues changeCOMP = new ContentValues();
                     changeCOMP.put("COMP",comp_1[position]);
-                    db.update("SALE",
+                    db.update("RENT",
                             changeCOMP,
                             "_id = ?",
                             new String[] {Integer.toString(position+1)});
                 }
 
             });
+
 
         } catch (SQLiteException e) {
             Toast toast = Toast.makeText(getActivity(), "Database unavailable", Toast.LENGTH_SHORT);
@@ -157,7 +159,7 @@ public class SaleMaterialFragment extends Fragment {
 
 
 
-        return SaleRecycler;
+        return RentRecycler;
 
     }
 

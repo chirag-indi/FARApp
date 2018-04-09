@@ -1,8 +1,6 @@
-package com.yikai.bitsandpizzas;
+package com.yikai.FARApp;
 
-/**
- * Created by Yikai on 2016/5/17.
- */
+
 
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;

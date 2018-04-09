@@ -1,4 +1,4 @@
-package com.yikai.bitsandpizzas;
+package com.yikai.FARApp;
 
 
 import android.app.Fragment;
@@ -51,8 +51,8 @@ public class SavedMaterialFragment extends Fragment {
         try {
 
 
-            SQLiteOpenHelper JiarunDatabaseHelper = new JiarunDatabaseHelper(getActivity());
-            final SQLiteDatabase db = JiarunDatabaseHelper.getReadableDatabase();
+            SQLiteOpenHelper DatabaseHelper = new DatabaseHelper(getActivity());
+            final SQLiteDatabase db = DatabaseHelper.getReadableDatabase();
 
             Cursor count_save_n = db.query("RENT",
                     new String[]{"SAVE", "COUNT(_id) AS count"},

@@ -1,4 +1,4 @@
-package com.yikai.bitsandpizzas;
+package com.yikai.FARApp;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -177,6 +177,9 @@ public class MainActivity extends Activity {
                 break;
             case 4:
                 fragment = new SavedMaterialFragment();
+                break;
+            case 5:
+                fragment = new AddListingFragment();
                 break;
             case 6:
                 fragment = new CompareFragment();
